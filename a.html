@@ -321,8 +321,11 @@ i {
 	left: 50%;
 	z-index: 2;
 	transform: translate(-50%,50%);
-	background: #8f6ed5 url(https://image.freepik.com/free-photo/friendly-brunette-looking-camera_23-2147774849.jpg) center center no-repeat;
-	background-size: cover;
+	/* background: #8f6ed5 url(https://image.freepik.com/free-photo/friendly-brunette-looking-camera_23-2147774849.jpg) center center no-repeat; */
+	background: #8f6ed5 url() center center no-repeat;
+	
+	
+	  background-size: cover;
 	border-radius: 50%;
 	box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
 }
@@ -1184,7 +1187,7 @@ xhttp.onreadystatechange = function() {
     showdata += '<div class="profile-page">';
 	showdata += '<div class="content">';
 		showdata += '<div class="content__cover">';
-			showdata += '<div class="content__avatar"></div>';
+			showdata += '<div class="content__avatar">'+ user[i].Employee_pic+'</div>';
 			showdata += '<div class="content__bull"> </div>';
 		showdata += '</div>';
 		showdata += '<div class="content__actions">';
